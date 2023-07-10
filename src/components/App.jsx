@@ -5,7 +5,7 @@ import { Filter } from './Filter/Filter';
 import { ContactList } from './ContactList/ContactList';
 import { ContactForm } from './ContactForm/ContactForm';
 
-const LS_Data = localStorage.getItem('contacts') ?? [];
+const LS_Data = localStorage.getItem('contacts') ?? "[]";
 
 export const App = () => {
   const [contacts, setContacts] = useState([]);
